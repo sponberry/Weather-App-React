@@ -3,9 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+require('dotenv').config({ debug: process.env.DEBUG });
+
 
 ReactDOM.render(
   <React.StrictMode>
+    <h1>Weather App</h1>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
