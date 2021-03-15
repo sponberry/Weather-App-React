@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import "./App.css";
 // import REACT_APP_API_KEY from "../../work_in_progress/env";
 
 export default function Weather() {
@@ -50,6 +51,12 @@ export default function Weather() {
         wind={windData}
         id={Number(weatherData.id)}
       />
+      <div className="footer">
+      <a href="https://github.com/sponberry/Weather-App-React" target="_blank">
+        Code hosted on Github
+      </a>
+      | Made by Abi 👩🏻‍💻
+    </div>
     </div>
   );
 }
