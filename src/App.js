@@ -52,7 +52,10 @@ export default function Weather() {
         id={Number(weatherData.id)}
       />
       <div className="footer">
-      <a href="https://github.com/sponberry/Weather-App-React" target="_blank">
+      <a href="https://github.com/sponberry/Weather-App-React" 
+      target="_blank"
+      rel="noreferrer"
+      >
         Code hosted on Github
       </a>
       | Made by Abi 👩🏻‍💻
