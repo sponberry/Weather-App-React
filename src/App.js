@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
-require('dotenv').config();
+import REACT_APP_API_KEY from "../../work_in_progress/env";
 
-console.log(process.env);
 
 export default function Weather() {
   let [city, setCity] = useState("");
