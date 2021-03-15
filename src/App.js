@@ -3,7 +3,6 @@ import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import REACT_APP_API_KEY from "../../work_in_progress/env";
 
-
 export default function Weather() {
   let [city, setCity] = useState("");
   let [display, setDisplay] = useState(null);
@@ -27,7 +26,7 @@ export default function Weather() {
     if (city.length === 0) {
       alert(`Please enter a city`);
     } else {
-      let apiKey = process.env.REACT_APP_API_KEY;
+      let apiKey = REACT_APP_API_KEY;
       let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
       axios.get(apiUrl).then(showData);
     }
